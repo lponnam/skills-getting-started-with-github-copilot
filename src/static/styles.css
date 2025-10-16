@@ -142,3 +142,179 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-section {
+  margin-top: 12px;
+  padding: 10px;
+  background-color: #e3f2fd;
+  border-radius: 5px;
+  border: 1px solid #90caf9;
+}
+
+.participants-section strong {
+  color: #1976d2;
+}
+
+.participants-list {
+  margin: 8px 0 0 0;
+  color: #1565c0;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.participant-item {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #cce3f6;
+  padding: 3px 8px;
+  margin: 2px 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.participant-email {
+  margin-right: 6px;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: #d32f2f;
+  font-size: 16px;
+  margin-left: 2px;
+  transition: color 0.2s;
+}
+.delete-icon:hover {
+  color: #b71c1c;
+}
+
+.no-participants {
+  color: #888;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+.signup-form {
+  margin-bottom: 20px;
+}
+
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.signup-form button {
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.signup-form button:hover {
+  background-color: #3949ab;
+}
+
+.signup-form .message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.signup-form .success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+}
+
+.signup-form .error {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #ef9a9a;
+}
+
+.signup-form .info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
+.signup-form .hidden {
+  display: none;
+}
+
+.signup-form .footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  color: #666;
+}
+
+.signup-form .participants-section {
+  margin-top: 12px;
+  padding: 10px;
+  background-color: #e3f2fd;
+  border-radius: 5px;
+  border: 1px solid #90caf9;
+}
+
+.signup-form .participants-section strong {
+  color: #1976d2;
+}
+
+.signup-form .participants-list {
+  margin: 8px 0 0 0;
+  color: #1565c0;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.signup-form .participant-item {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #cce3f6;
+  padding: 3px 8px;
+  margin: 2px 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.signup-form .participant-email {
+  margin-right: 6px;
+}
+
+.signup-form .delete-icon {
+  cursor: pointer;
+  color: #d32f2f;
+  font-size: 16px;
+  margin-left: 2px;
+  transition: color 0.2s;
+}
+.signup-form .delete-icon:hover {
+  color: #b71c1c;
+}
+
+.signup-form .no-participants {
+  color: #888;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+if (response.ok) {
+  messageDiv.textContent = "Successfully signed up!";
+  messageDiv.className = "message success";
+  signupForm.reset();
+  fetchActivities(); // Refresh activities list
+}
